@@ -1,0 +1,82 @@
+@font-face {
+    src: url("fonts/Stormlight.ttf");
+    font-family: Stormlight;
+}
+
+body {
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/3.webp");
+    background-size: cover;
+    padding: 100px;
+}
+
+.btn {
+    background-color: rgb(9, 9, 9);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10 12 10 14;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif, 300;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn svg {
+    margin-left: 6px; /* Adjust the value to control the spacing between the icon and text */
+}
+
+.underline {
+    border-bottom: solid 2px white;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10 0 10 50;
+    margin-bottom: 40px;
+}
+
+#logo-svg {
+    width: 100%; /* Adjust width as needed */
+    height: 100%; /* Maintain aspect ratio */
+    fill: #fff; /* SVG fill color */
+}
+
+/* If you want to  style specific parts of the SVG, 
+   you can use descendant selectors. For example: */
+#logo-svg path {
+    stroke: none; /* Example property for the paths inside the SVG */
+}
+
+.terms {
+    margin-top: 40px;
+}
+
+.h3 {
+    font-size: 24px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    color: #392502;
+    margin-top: 20px;
+}
+
+#h1 {
+    font-family: Stormlight;
+    text-shadow: -3px 3px 8px #432b03; /* left, right➡️   top, bottom ⬇️   blur color */
+    /* text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); --- this has the blur to the shadow*/
+}
